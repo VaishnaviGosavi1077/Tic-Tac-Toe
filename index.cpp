@@ -4,7 +4,7 @@
     {'1','2','3'},
     {'4','5','6'},
     {'7','8','9'}
- }
+ };
  char currentPlayer='X';
  void displayboard()
  {
@@ -73,10 +73,10 @@ int main()
          continue;
       }
       makemove(choice);
-      if(checkwin())
+      if(checkwin)
       {
          displayboard();
-         cout<<"player"<<(currentPlayer=='X'?'o':'x)<<"wins!\n";
+         cout<<"player"<<(currentPlayer=='X'?'o':'x')<<"wins!\n";
             break;
       }
       if(checkdraw())
